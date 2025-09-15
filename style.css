@@ -1,3 +1,97 @@
+:root {
+  /* =======================
+     🎨 PALETA BASE
+  ======================= */
+  --purpura-100: #1C1B29;
+  --purpura-80: #262538;
+  --purpura-60: #32314A;
+  --purpura-40: #3E3D5C;
+  --purpura-20: #48476B;
+  --purpura-0:  #575682;
+
+  --alga-100: #091F1E;
+  --alga-80:  #0C2927;
+  --alga-60:  #12403D;
+  --alga-40:  #17524E;
+  --alga-20:  #1C635F;
+  --alga-0:   #26857F;
+
+  /* =======================
+     🌊 AZULES (Educación & Tecnología)
+  ======================= */
+  --azul-100: #0D1B2A;
+  --azul-80:  #1B263B;
+  --azul-60:  #274C77;
+  --azul-40:  #376996;
+  --azul-20:  #468FAF;
+  --azul-0:   #A9D6E5;
+
+  /* =======================
+     🌿 VERDES (Energía & Creatividad)
+  ======================= */
+  --verde-100: #0B2616;
+  --verde-80:  #14532D;
+  --verde-60:  #1E7A41;
+  --verde-40:  #28A745;
+  --verde-20:  #51C27E;
+  --verde-0:   #B8EBD0;
+
+  /* =======================
+     ☀️ AMARILLOS (Energía y Atención)
+  ======================= */
+  --amarillo-100: #3A3000;
+  --amarillo-80:  #5A4800;
+  --amarillo-60:  #B08900;
+  --amarillo-40:  #FFD000;
+  --amarillo-20:  #FFE666;
+  --amarillo-0:   #FFF8CC;
+
+  /* =======================
+     ❤️ ROJOS (Llamados a la Acción)
+  ======================= */
+  --rojo-100: #2A0606;
+  --rojo-80:  #5C0A0A;
+  --rojo-60:  #991B1B;
+  --rojo-40:  #DC2626;
+  --rojo-20:  #F87171;
+  --rojo-0:   #FECACA;
+
+  /* =======================
+     🌸 ROSAS & PASTELES (Amigable y Acogedor)
+  ======================= */
+  --rosa-100: #3B0A3E;
+  --rosa-80:  #701A75;
+  --rosa-60:  #A21CAF;
+  --rosa-40:  #D946EF;
+  --rosa-20:  #F472B6;
+  --rosa-0:   #FBCFE8;
+
+  /* =======================
+     🟢 COLORES NEÓN (Para efectos glow)
+  ======================= */
+  --neon-cyan:       #00FFF7;
+  --neon-green:      #39FF14;
+  --neon-pink:       #FF10F0;
+  --neon-purple:     #9D00FF;
+  --neon-blue:       #0FF0FC;
+  --neon-orange:     #FF5F1F;
+  --neon-yellow:     #F5FF00;
+  --neon-red:        #FF073A;
+
+  /* =======================
+     ⚪ NEUTROS / FONDOS
+  ======================= */
+  --gris-100: #121212;
+  --gris-80:  #1E1E1E;
+  --gris-60:  #2C2C2C;
+  --gris-40:  #5C5C5C;
+  --gris-20:  #A3A3A3;
+  --gris-0:   #F5F5F5;
+
+  --blanco: #FFFFFF;
+  --negro:  #000000;
+}
+
 body {
 	margin: 0;
 	display: flex;
@@ -7,35 +101,37 @@ body {
 /* Panel izquierdo */
 .panel-izq {
 	width: 120px;
-	background-color: #2D2C42;
+	background-color: var(--purpura-80);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 10px;
 	padding: 10px;
+	border: 3px solid var(--alga-60);
 }
 .panel-der {
 	width: 120px;
-	background-color: #332D42;
+	background-color: var(--purpura-60);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 10px;
 	padding: 10px;
+	border: 6px solid var(--azul-80);
 }
 .rect {
-	background-color: green;
+	background-color: var(--rojo-100);
 	height: 40px;
 	width: 80px;
 	position: absolute;
 	cursor: grab;
 	user-select: none;
-	border: 3px solid #600010;
+	border: 3px solid var(--neon-red);
 }
 /* Área central */
 .editor {
 	flex: 1;
-	background-color: #333542;
+	background-color: var(--azul-100);
 	position: relative;
 	overflow: hidden;
 	z-index: -1;
